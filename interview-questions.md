@@ -32,7 +32,8 @@ Yarn creates a "node_modules" directory in the project and that's where it insta
 
 Your answer: A React component is a piece of code that can be reused.
 
-Researched answer: 
+Researched answer: A React component is a piece of code that is reusable. It represents part of the interface with the user. It can be a function, a class, or an object. Usually the component specifies the rendering logic for a piece of the user interface. Components in React are a powerful way to build reusable and modular elements for the UI.
+Components can accept input in the form of props (properties). Props are arguments that are passed to the component when it is rendered. 
 
 4. What is the difference between state values and props in React?
 
