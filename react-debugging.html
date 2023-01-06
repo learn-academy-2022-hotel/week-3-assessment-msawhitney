@@ -34,7 +34,6 @@
         const suit = ["❤️", "♦️", "♠️", "♣️"]
         const rank = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
         const [hand, setHand] = useState([])
-
         const drawCard = () => {
           let draw = `${rank[Math.floor(Math.random() * rank.length)]} ${suit[Math.floor(Math.random() * suit.length)]}`
           if(hand.indexOf(draw) === -1) {
@@ -65,11 +64,13 @@
         // No need to change anything ABOVE this line ^
 
         return (
+          <>
           <h1>Draw a Card</h1>
-          <button onClick={}>
+          <button onClick={drawCard}>
             Click to Draw a Card
           </button>
-          <button onclick={shuffle}>
+          <button onClick={shuffle}>
+            
             Return Cards and Shuffle Deck
           </button>
           <div style={handStyles}>
@@ -80,10 +81,10 @@
                 </div>
               )
             })}
-          </div>
+          </div></>
         )
       }
-
+    
       // No need to change anything below this line
 
       const domContainer = document.querySelector('#react-container')
